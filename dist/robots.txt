@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mito-plus.yoruniokiru-77.chatgpt.site/sitemap.xml

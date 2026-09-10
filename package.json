@@ -1,0 +1,11 @@
+{
+  "name": "mitoplus",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node validate.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
