@@ -1,0 +1,21 @@
+.beauty-filter{background:#fff0bd;padding-top:72px;padding-bottom:75px}
+.beauty-kicker{margin:0;color:#d85d95;font-size:1.45rem;font-weight:500;letter-spacing:.11em;line-height:1.3}
+.beauty-filter h2{font-size:.92rem;letter-spacing:.06em;margin:2px 0 27px}
+.beauty-card{max-width:1050px;margin:0 auto;padding:24px;background:#fff;border:1px solid #f1d6a3;border-radius:18px;box-shadow:0 8px 24px #8e693012;text-align:left}
+.beauty-banner{position:relative;overflow:hidden;border-radius:12px;aspect-ratio:16/9;background:#ffe552}
+.beauty-banner>img{display:block;width:100%;height:100%;object-fit:cover}
+.beauty-banner-copy{position:absolute;left:4%;top:13%;width:56%;transform:rotate(-3deg);color:#9154c6;text-align:center;filter:drop-shadow(0 7px 0 #9555b8)}
+.beauty-banner-copy strong{display:block;color:#b17ee0;font-size:clamp(3rem,10vw,8rem);font-weight:900;line-height:1.2;letter-spacing:-.08em;-webkit-text-stroke:clamp(3px,.65vw,10px) #fff;paint-order:stroke fill;text-shadow:3px 3px 0 #9154c6}
+.beauty-banner-copy strong span{font-size:.6em;letter-spacing:0;color:#e95da0}
+.beauty-banner-copy p{display:inline-block;margin:0;padding:5px 14px;background:#fffde5ed;border:3px solid #fff;border-radius:15px;font-size:clamp(1rem,2.9vw,2.5rem);font-weight:900;line-height:1.4;text-shadow:1px 1px 0 #fff}
+.beauty-description{padding:26px 6px 20px;color:#48324a;font-size:1rem;line-height:1.95}
+.beauty-description p{margin:0 0 9px}.beauty-description strong{background:linear-gradient(transparent 62%,#fff1a1 62%);color:#6b3581}
+.beauty-comparison{max-width:690px;margin:0 auto;border:1px solid #f09abb;border-radius:12px;overflow:hidden;background:#fff}
+.beauty-comparison h3{position:relative;margin:0;padding:11px 15px;background:#e979a1;color:#fff;text-align:center;font-size:1.05rem;line-height:1.5}
+.beauty-comparison h3:after{content:'';position:absolute;top:100%;left:50%;transform:translateX(-50%);border:12px solid transparent;border-top-color:#e979a1}
+.beauty-comparison-image{position:relative;margin:24px 18px 0;overflow:hidden}
+.beauty-comparison-image img{display:block;width:100%;height:auto}
+.beauty-before,.beauty-after{position:absolute;top:10px;width:36%;padding:3px 8px;border-radius:30px;text-align:center;color:#fff;font:800 clamp(.8rem,2.5vw,1.4rem)/1.4 var(--font)}
+.beauty-before{left:7%;background:#65c6ed}.beauty-after{right:7%;background:#ef6b98}
+.beauty-comparison>p{margin:0;padding:10px 17px 15px;color:#806d79;text-align:center;font-size:.73rem;line-height:1.6}
+@media(max-width:760px){.beauty-filter{padding:50px 14px}.beauty-kicker{font-size:1.22rem}.beauty-filter h2{font-size:.8rem;margin-bottom:19px}.beauty-card{padding:10px;border-radius:13px}.beauty-banner{border-radius:8px}.beauty-banner-copy{left:3%;top:13%;width:56%}.beauty-banner-copy strong{font-size:clamp(2rem,10vw,4rem);-webkit-text-stroke:4px #fff}.beauty-banner-copy p{font-size:clamp(.68rem,2.5vw,1.15rem);padding:3px 5px;border-width:2px;border-radius:7px}.beauty-description{padding:18px 7px 12px;font-size:.84rem}.beauty-comparison h3{font-size:.9rem}.beauty-comparison-image{margin:22px 8px 0}.beauty-before,.beauty-after{top:6px}.beauty-comparison>p{font-size:.66rem}}
