@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mitoplus-gtse.vercel.app/sitemap.xml
+Sitemap: https://mito-plus.com/sitemap.xml
