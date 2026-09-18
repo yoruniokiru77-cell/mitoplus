@@ -22,6 +22,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="calculator.css">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"EmploymentAgency","name":"水戸＋（みとプラス）","url":"https://mitoplus-gtse.vercel.app/","description":"茨城県水戸市を中心に茨城県全域へ対応するチャットレディ求人。通勤・在宅、勤務時間自由、日払いに対応。","areaServed":{"@type":"AdministrativeArea","name":"茨城県"},"sameAs":["https://lin.ee/53nShN8"]}
   </script>
@@ -61,6 +62,42 @@
       <article class="course-card course-mint"><p class="course-label">03 / NEXT CHALLENGE</p><p class="course-kicker">次の目標へ、しっかり取り組む</p><h3><strong>20<span>万円</span></strong>目標コース</h3><p>まとまった貯金や、これからの計画に。合計20万円を目標に、使える時間と進め方を相談するコースです。</p><ul><li>目標を持って取り組みたい</li><li>働く時間をしっかり確保したい</li></ul><details class="course-details"><summary>コースを詳しく見る</summary><div><h4>目標とペースを一緒に考える</h4><p>目標にしたい時期と、確保できる時間を整理。通勤・在宅から、自分が取り組みやすい環境を選びましょう。</p><h4>ご相談時に教えてください</h4><p>目標金額、希望する期間、働ける時間、お仕事経験の有無。</p><a class="button" href="https://lin.ee/53nShN8" target="_blank" rel="noopener" aria-label="20万円目標コースについてLINEで相談する">このコースをLINEで相談 ›</a></div></details></article>
     </div><p class="course-disclaimer">表示金額は目標であり、報酬や達成を保証するものではありません。<br>実際の報酬・達成までの期間は、業務内容や稼働状況などによって異なります。</p><article class="first-course"><div><p class="course-label">04 / FIRST TALK</p><h3>まだ迷っているなら、<br class="mobile-only">はじめて相談コース。</h3><p>コースを決めていなくても大丈夫。仕事内容や働き方から知りたい方は、気になることを相談するところから。</p></div><a class="button button-outline" href="https://lin.ee/53nShN8" target="_blank" rel="noopener" aria-label="はじめて相談コースについてLINEで相談する">LINEで相談する ›</a></article></section>
     <section class="section reward" id="reward" aria-labelledby="reward-heading"><p class="eyebrow">WORK & REWARD</p><h2 id="reward-heading">時間も、場所も。<br>わたしに合う働き方。</h2><p class="section-intro">水戸＋は、通勤・在宅のどちらにも対応しています。</p><div class="reward-panel"><div class="reward-main"><span class="pill">日払い対応可</span><h3>がんばった分の受け取りも、<br>自分のペースで。</h3><p>日払いに対応しています。受け取り方法や手続きについては、ご相談の際にご確認ください。詳しい報酬の条件も、お仕事を始める前にご案内します。</p></div><dl class="reward-checks"><div><dt>勤務時間は自由</dt><dd>予定や生活リズムに合わせて働けます。</dd></div><div><dt>通勤・在宅どちらもOK</dt><dd>自分に合う場所で、無理のないスタートを。</dd></div><div><dt>充実した設備</dt><dd>通勤でのお仕事に使える設備をご用意。詳細はご相談時にご案内します。</dd></div></dl></div></section>
+    <section class="section calculator" id="calculator" aria-labelledby="calculator-heading">
+      <p class="eyebrow">MY INCOME PLAN</p>
+      <h2 id="calculator-heading">わたしのペースで、<br class="mobile-only">月の報酬をシミュレーション。</h2>
+      <p class="section-intro">日数・時間・経験レベルを選んで、<br class="mobile-only">働き方をイメージしてみよう。</p>
+      <p class="calculator-note" id="calculator-note">仮の時間単価による計算例です。実績・収入予測・受取額を示すものではありません。</p>
+      <div class="calculator-grid" id="income-calculator" hidden>
+        <form class="calculator-controls" aria-label="報酬の計算条件" aria-describedby="calculator-note">
+          <div class="calculator-field">
+            <div class="calculator-label"><label for="stream-days">月の配信日数</label><output id="days-value" for="stream-days">4日</output></div>
+            <input id="stream-days" name="days" type="range" min="1" max="30" step="1" value="4">
+            <div class="range-limits" aria-hidden="true"><span>1日</span><span>30日</span></div>
+          </div>
+          <div class="calculator-field">
+            <div class="calculator-label"><label for="stream-hours">1日の配信時間</label><output id="hours-value" for="stream-hours">3時間</output></div>
+            <input id="stream-hours" name="hours" type="range" min="1" max="12" step="0.5" value="3">
+            <div class="range-limits" aria-hidden="true"><span>1時間</span><span>12時間</span></div>
+          </div>
+          <fieldset class="experience-field"><legend>経験レベル</legend><div class="experience-options">
+            <label><input type="radio" name="experience" value="beginner" checked><span>初心者</span></label>
+            <label><input type="radio" name="experience" value="intermediate"><span>中級者</span></label>
+            <label><input type="radio" name="experience" value="advanced"><span>上級者</span></label>
+          </div></fieldset>
+          <p class="calculator-rate-note">レベル別の単価はシミュレーション用の仮設定です。</p>
+          <button class="calculator-reset" type="reset">↺ 初期値に戻す</button>
+        </form>
+        <div class="calculator-result" aria-live="polite" aria-atomic="true">
+          <p class="result-label">月あたりの報酬目安</p>
+          <p class="result-amount"><span>¥</span><output id="monthly-income" for="stream-days stream-hours">30,000</output></p>
+          <p class="result-caption">仮の単価による計算例・報酬保証ではありません</p>
+          <dl class="calculator-breakdown"><div><dt>月の総配信時間</dt><dd id="monthly-hours">12時間</dd></div><div><dt>選択した経験レベル</dt><dd id="experience-label">初心者</dd></div><div><dt>仮定の時間単価</dt><dd id="hourly-rate">2,500円／時間</dd></div></dl>
+          <p class="calculator-formula" id="income-formula">4日 × 3時間 × 2,500円 = 30,000円</p>
+        </div>
+      </div>
+      <noscript><p class="calculator-note">シミュレーターを利用するにはJavaScriptを有効にしてください。</p></noscript>
+      <p class="calculator-footnote">実際の報酬は配信内容・稼働状況などによって異なります。<br>詳しい条件や働き方は、<a href="https://lin.ee/53nShN8" target="_blank" rel="noopener">LINEでご相談ください ↗</a></p>
+    </section>
     <section class="section flow" id="flow" aria-labelledby="flow-heading"><p class="eyebrow">FIRST STEP</p><h2 id="flow-heading">相談からスタートまで。</h2><p class="section-intro">まず知って、話して、考える。<br class="mobile-only">ご相談の進め方をご紹介します。</p><ol class="flow-grid"><li><span class="step">STEP 01</span><h3>LINEで相談</h3><p>仕事内容や働き方など、知りたいことをLINEで相談。気になることだけでも、気軽に送れます。</p></li><li><span class="step">STEP 02</span><h3>内容・条件を確認</h3><p>業務内容、報酬、働く場所や時間などをご確認ください。体験の有無や必要な準備も、この段階で。</p></li><li><span class="step">STEP 03</span><h3>納得したら次の一歩</h3><p>応募条件や手続きについて確認し、自分に合っているか検討してから、お仕事開始へ進みましょう。</p></li></ol><p class="fine-print">詳しい面談・体験・開始手続きはLINEでご案内します。</p></section>
     <section class="section area" id="area" aria-labelledby="area-heading"><div class="area-inner"><span class="area-script" aria-hidden="true">Ibaraki life,<br>more happy!</span><p class="eyebrow">AREA</p><h2 id="area-heading">水戸から、<br class="mobile-only">茨城ぜんぶに。</h2><p class="section-intro">水戸エリアを中心に、茨城県全域に対応。</p><ul class="area-list" aria-label="対応エリア"><li>水戸</li><li>ひたちなか</li><li>日立</li><li>笠間</li><li>土浦</li><li>つくば</li><li>その他の茨城エリア</li></ul><p class="area-note">通勤も、在宅も。お住まいの地域からご相談ください。<br>通勤場所の詳細は、ご相談の際にご案内します。</p><span class="area-flower" aria-hidden="true">✿</span></div></section>
     <section class="section recruitment" id="recruitment" aria-labelledby="recruitment-heading"><p class="eyebrow">RECRUIT</p><h2 id="recruitment-heading">水戸・茨城の<br class="mobile-only">チャットレディ募集要項</h2><p class="section-intro">応募の前に、こちらをご確認ください。</p><dl class="recruit-table"><div><dt>募集職種</dt><dd>チャットレディ</dd></div><div><dt>仕事内容</dt><dd>オンラインでのコミュニケーション業務。具体的なサービス・業務範囲は、ご案内時にご確認ください。</dd></div><div><dt>対応エリア</dt><dd>茨城県水戸エリアを中心に、茨城県全域</dd></div><div><dt>働く場所</dt><dd>通勤・在宅どちらも可能</dd></div><div><dt>応募条件</dt><dd>18歳以上。お手続きに必要な書類などは、ご相談時にご案内します。</dd></div><div><dt>勤務時間</dt><dd>自由。生活のリズムや予定に合わせて働けます。</dd></div><div><dt>報酬の受け取り</dt><dd>日払い対応可。詳細な条件・受け取り方法は、ご相談時にご案内します。</dd></div><div><dt>設備</dt><dd>充実した設備をご用意。利用できる設備の詳細は、ご相談時にご案内します。</dd></div><div><dt>応募・相談</dt><dd><a class="text-link" href="https://lin.ee/53nShN8" target="_blank" rel="noopener">公式LINEから相談する ↗</a></dd></div></dl></section>
